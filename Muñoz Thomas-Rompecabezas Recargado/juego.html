@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Steve Jobs</title>
+    <link rel="stylesheet" href="css/juego.css">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script type="js/jquery-3.2.1.js"></script>  
+    <script src="js/sweetalert/sweetalert.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="js/sweetalert/sweetalert.css">
+    <link href="https://fonts.googleapis.com/css?family=Oswald:300,400,500,600,700" rel="stylesheet">
+    <script type="text/javascript" src="js/piezas.js"></script>
+  </head>
+  <body>
+      <div class="col-40">
+        <div id="titulo">
+          <h1>Rompecabezas</h1>
+        </div>
+        <div id="seleccionar">
+          <h2 id="subTitulo">Seleccionar</h2>
+          <div class="selector">
+              <h3>Cantidad de piezas por lado:</h3>
+              <select id="cantidadDePiezas">
+                  <option value='2'> 2 </option>
+                  <option value='3'> 3 </option>
+                  <option value='4'> 4 </option>
+                  <option value='5'> 5 </option>
+              </select>
+        </div>
+        </div>
+        <div class="inputRadio">
+          <label>Nivel:</label>
+          <input type="radio" name="nivel" value="facil" id="facil">
+          <label for="facil">Facil</label>
+          <input type="radio" name="nivel" value="intermedio" id="intermedio">
+          <label for="intermedio">intermedio</label>
+          <input type="radio" name="nivel" value="dificil" id="dificil">
+          <label for="dificil">dificil</label>
+        </div>
+         <div id="instrucciones">
+        <h2 id="subTitulo">Instrucciones</h2>
+        <ul>
+          <li>Mover las piezas presionando las teclas de flechas</li>
+          <li>Con la tecla "Z" se puede volver al movimiento anterior</li>
+          <li>Encontrar el orden correcto de la imagen</li> 
+        </ul>
+        </div>
+        <button id="mezclar">Mezclar</button>
+        <h3 id="contadorMovimiento">Movimientos Restantes:</h3>
+      </div>
+
+    <div class="col-60">
+     <canvas id="canvas" width="600" height="600">
+     </canvas>
+    </div>
+    <script src="js/juego.js"></script>
+  </body>
+</html>
